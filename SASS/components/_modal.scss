@@ -1,0 +1,185 @@
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  z-index: 1;
+  transition-property: visibility, opacity, transform;
+  transition-duration: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0.5px solid $grey;
+    color: $grey;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white;
+  }
+
+  &__close-button:hover {
+    border: 2px solid $grey;
+    font-weight: bold;
+  }
+
+  &__header {
+    margin: 40px auto 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $font;
+  }
+
+  &__header-box {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin: 12px auto;
+    width: 448px;
+  }
+
+  &__box input::placeholder,
+  &__box textarea::placeholder {
+    font-size: 0.75rem;
+    line-height: 1.42;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__label-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    fill: $black;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__label-box:focus-within {
+    fill: $blue;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $grey;
+    margin-bottom: 4px;
+  }
+
+  &__label-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 11px 12px 11px 42px;
+    color: $grey;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__label-input:focus-within {
+    outline: none;
+    border-color: $blue;
+  }
+
+  &__input-icons {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 38px;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  &__label-input--textarea {
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+  }
+
+  &__checkbox {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $grey;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox-unchecked {
+    width: 16px;
+    height: 15px;
+    vertical-align: text-bottom;
+    fill: $black;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-checked {
+    top: 5px;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    vertical-align: text-bottom;
+    fill: $black;
+    opacity: 0;
+    z-index: 99;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-input:checked + &__checkbox-checked {
+    opacity: 1;
+  }
+
+  &__checkbox-input:checked ~ &__checkbox-unchecked {
+    opacity: 0;
+  }
+
+  &__checkbox-link {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+    padding: 10px 76px;
+    background: $blue;
+    color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+}
