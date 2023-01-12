@@ -16,18 +16,13 @@
 
   <body>
     <header class="header">
-      <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="40px" height="40px" class="menu__button">
-          <use href="images/icons.svg#icon-hamburger"></use>
-        </svg>
-      </button>
-
       <div class="header__navi">
         <div>
           <a class="header__logo" href="index.html"
             >Web<span class="header__logo--black">Studio</span></a
           >
         </div>
+
         <nav>
           <ul class="header__menu">
             <li>
@@ -59,6 +54,15 @@
             </a>
           </li>
         </ul>
+        <button
+          class="header__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" class="header__button">
+            <use href="images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 

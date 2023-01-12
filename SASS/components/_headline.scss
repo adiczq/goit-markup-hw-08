@@ -1,48 +1,49 @@
-.headline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 5.875rem 0;
-  max-width: 100rem;
-  background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+// .headline {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 auto;
+//   padding: 94px 0;
+//   width: 100%;
+//   height: auto;
+//   background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../images/bg.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
 
-  &__title {
-    margin: 0 auto;
-    margin-top: 106px;
-    width: 696px;
-    font-weight: 900;
-    font-size: 2.75rem;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white;
-  }
+//   &__title {
+//     margin: 0 auto;
+//     margin-top: 106px;
+//     width: 696px;
+//     font-weight: 900;
+//     font-size: 2.75rem;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: $white;
+//   }
 
-  &__btn {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 106px;
-    width: 200px;
-    height: 50px;
-    background: $blue;
-    box-shadow: 0px 4px 4px $shadow;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $white;
-  }
-  &__btn:hover,
-  &__btn:focus {
-    border: 1px solid $ImgOverlay;
-  }
-}
+//   &__btn {
+//     margin: 0 auto;
+//     margin-top: 30px;
+//     margin-bottom: 106px;
+//     width: 200px;
+//     height: 50px;
+//     background: $blue;
+//     box-shadow: 0px 4px 4px $shadow;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     font-weight: 700;
+//     font-size: 1rem;
+//     line-height: 1.88;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     color: $white;
+//   }
+//   &__btn:hover,
+//   &__btn:focus {
+//     border: 1px solid $ImgOverlay;
+//   }
+// }
