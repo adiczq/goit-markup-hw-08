@@ -83,6 +83,7 @@
   padding: 60px 15px;
   background: $background;
   max-width: 480px;
+  margin: 0 auto;
 
   &__container {
   }
@@ -114,8 +115,7 @@
   }
 
   &__img {
-    width: 450px;
-    height: 460px;
+    width: 100%;
   }
 
   &__name {
