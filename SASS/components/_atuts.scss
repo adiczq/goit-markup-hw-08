@@ -42,3 +42,53 @@
 //     height: 70px;
 //   }
 // }
+
+//
+// kopia
+//
+
+.atut {
+  background: $white;
+  margin: 0 auto;
+  padding: 60px 15px;
+  max-width: 480px;
+
+  &__grid {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $grey;
+  }
+
+  &__item {
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $iconbg;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}

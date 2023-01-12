@@ -112,7 +112,6 @@
   background: $white;
   max-width: 480px;
   margin: 0 auto;
-
   &__navi {
     height: 60px;
 
@@ -127,6 +126,7 @@
     font-size: 1.625rem;
     line-height: 1.19;
     color: $blue;
+    margin: 16px 0 16px 15px;
   }
 
   &__logo--black {
@@ -146,6 +146,7 @@
 
   &__button {
     fill: $black;
+    margin: 10px 15px 10px 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -231,17 +232,11 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .header__menu {
     display: none;
   }
   .header__link {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header__button {
     display: none;
   }
 }
@@ -253,7 +248,10 @@
 }
 
 @media (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
   .header {
-    max-width: 1200px;
+    max-width: 768px;
   }
 }
