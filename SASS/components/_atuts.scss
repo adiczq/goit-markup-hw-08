@@ -72,7 +72,7 @@
 
   &__text {
     font-size: 0.875rem;
-    line-height: 1.71;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: $grey;
   }
@@ -90,5 +90,40 @@
   &__icon {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .atut {
+    max-width: 768px;
+  }
+  .atut__item {
+    width: 354px;
+  }
+  .atut__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .atut__container {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .atut {
+    max-width: 1200px;
+    padding: 94px 15px 0 15px;
+  }
+  .atut__item {
+    width: 270px;
+  }
+  .atut__grid {
+    flex-direction: row;
+  }
+  .atut__container {
+    width: 270px;
   }
 }

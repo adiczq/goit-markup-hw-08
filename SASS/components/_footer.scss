@@ -154,7 +154,6 @@
 
   &__header {
     text-align: center;
-    margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.14;
@@ -250,5 +249,46 @@
   &__link:hover,
   &__link:focus {
     color: $blue;
+  }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    max-width: 768px;
+  }
+  .footer__raw {
+    display: flex;
+    gap: 144px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 78px;
+  }
+  .footer__newsletter {
+    flex-direction: row;
+  }
+  .footer__input {
+    width: 358px;
+  }
+  .footer__raw {
+    display: flex;
+    gap: 70px;
+  }
+  .footer__address {
+    align-items: flex-start;
+  }
+  .footer__logo {
+    text-align: left;
+  }
+  .footer__header {
+    text-align: left;
   }
 }

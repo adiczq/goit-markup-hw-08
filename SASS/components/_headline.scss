@@ -53,7 +53,6 @@
 //
 
 .headline {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -114,5 +113,11 @@
     height: 600px;
     background-position: center;
     background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../../images/bg.jpg");
+  }
+  .headline__title {
+    margin-top: 106px;
+    width: 696px;
+    font-size: 2.75rem;
+    line-height: 1.36;
   }
 }

@@ -76,7 +76,7 @@
 
       <section class="atut">
         <ul class="atut__grid">
-          <li>
+          <li class="atut__container">
             <div class="atut__item">
               <svg class="atut__icon">
                 <use href="images/icons.svg#icon-antenna"></use>
@@ -88,7 +88,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="atut__container">
             <div class="atut__item">
               <svg class="atut__icon">
                 <use href="images/icons.svg#icon-clock"></use>
@@ -100,7 +100,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="atut__container">
             <div class="atut__item">
               <svg class="atut__icon">
                 <use href="images/icons.svg#icon-diagram"></use>
@@ -112,7 +112,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="atut__container">
             <div class="atut__item">
               <svg class="atut__icon">
                 <use href="images/icons.svg#icon-astronaut"></use>
@@ -127,7 +127,7 @@
         </ul>
       </section>
 
-      <!-- <section class="wwd">
+      <section class="wwd">
         <h3 class="wwd__title">Czym się zajmujemy</h3>
         <ul class="wwd__grid">
           <li class="wwd__item">
@@ -147,7 +147,7 @@
             </div>
           </li>
         </ul>
-      </section> -->
+      </section>
 
       <section class="team">
         <div class="team__container">
@@ -332,39 +332,41 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__grid">
-          <a class="footer__logo" href="index.html"
-            >Web<span class="footer__highlight">Studio</span></a
-          >
-          <address class="footer__address">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer__link" href="tel:48111111111">+48 111 111 111</a>
-          </address>
-        </div>
-        <div class="footer__grid">
-          <h2 class="footer__header">Dołącz do nas</h2>
-          <div class="footer__icons-box">
-            <a class="footer__icons-link" href="https://www.instagram.com/" target="_blank">
-              <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
-                <use href="images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a class="footer__icons-link" href="https://twitter.com/" target="_blank">
-              <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
-                <use href="images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a class="footer__icons-link" href="https://www.facebook.com/" target="_blank">
-              <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
-                <use href="images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a class="footer__icons-link" href="https://www.linkedin.com/" target="_blank">
-              <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
-                <use href="images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+        <div class="footer__raw">
+          <div class="footer__grid">
+            <a class="footer__logo" href="index.html"
+              >Web<span class="footer__highlight">Studio</span></a
+            >
+            <address class="footer__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+              <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+              <a class="footer__link" href="tel:48111111111">+48 111 111 111</a>
+            </address>
+          </div>
+          <div class="footer__grid">
+            <h2 class="footer__header">Dołącz do nas</h2>
+            <div class="footer__icons-box">
+              <a class="footer__icons-link" href="https://www.instagram.com/" target="_blank">
+                <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="https://twitter.com/" target="_blank">
+                <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="https://www.facebook.com/" target="_blank">
+                <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="https://www.linkedin.com/" target="_blank">
+                <svg class="footer__icons" width="44" height="44" viewBox="0 0 22 44">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <div class="footer__grid">
@@ -486,14 +488,14 @@
     </div>
 
     <div class="menu js-menu-container" id="mobile-menu">
-      <button class="menu__toggle js-open-menu js-close-menu">
+      <button class="menu__toggle-close js-open-menu js-close-menu">
         <svg class="icon" width="18" height="18">
           <use href="images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <div class="menu__container">
         <ul class="menu__nav">
-          <li><a href="#" class="menu__link">Agencja</a></li>
+          <li><a href="index.html" class="menu__link">Agencja</a></li>
           <li><a href="portfolio.html" class="menu__link">Portfolio</a></li>
           <li><a href="#" class="menu__link">Kontakt</a></li>
         </ul>
@@ -501,10 +503,10 @@
           <a href="tel:+48111111111" class="menu__link menu__link--active"> +48 111 111 111 </a>
           <a href="mailto:info@devstudio.com" class="menu__email"> info@devstudio.com </a>
           <ul class="menu__social">
-            <li><a class="menu__social__link" href="#">Instagram</a></li>
-            <li><a class="menu__social__link" href="#">Twitter</a></li>
-            <li><a class="menu__social__link" href="#">Facebook</a></li>
-            <li><a class="menu__social__link" href="#">Linkedln</a></li>
+            <li><a class="menu__social__link" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a class="menu__social__link" href="https://twitter.com/">Twitter</a></li>
+            <li><a class="menu__social__link" href="https://www.facebook.com/">Facebook</a></li>
+            <li><a class="menu__social__link" href="https://www.linkedin.com/">Linkedln</a></li>
           </ul>
         </div>
       </div>

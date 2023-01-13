@@ -2,7 +2,7 @@
   width: 1200px;
   background: $white;
   margin: 0 auto;
-  padding: 94px 0;
+  padding: 94px 15px 94px 15px;
 
   &__title {
     margin: 0 auto;
@@ -45,5 +45,11 @@
     color: $white;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1199px) {
+  .wwd {
+    display: none;
   }
 }
