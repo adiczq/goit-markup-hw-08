@@ -59,8 +59,7 @@
   padding: 94px 0;
   width: 100vw;
   height: 400px;
-  background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay),
-    url("../../images/bgMobile.jpg");
+  background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../images/bgMobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +103,7 @@
   .headline {
     background-position: center;
     background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay),
-      url("../../images/bgTablet.jpg");
+      url("../images/bgTablet.jpg");
   }
 }
 
@@ -112,7 +111,7 @@
   .headline {
     height: 600px;
     background-position: center;
-    background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../../images/bg.jpg");
+    background-image: linear-gradient(to top, $ImgOverlay, $ImgOverlay), url("../images/bg.jpg");
   }
   .headline__title {
     margin-top: 106px;
